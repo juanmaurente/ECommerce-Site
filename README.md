@@ -46,3 +46,19 @@ Using Firestore and react create, a cart system. Create a cart page in your reac
 -   [React-router-dom](https://reactrouter.com/docs/en/v6/getting-started/overview)
 -   [Dummy JSON](https://dummyjson.com/)
 -   [Fake Store](https://fakestoreapi.com/)
+
+## Design - Inspiration
+
+![image](https://user-images.githubusercontent.com/26740359/182778972-c3801368-e889-4953-8525-b8e4f5a56e94.png)
+![image](https://user-images.githubusercontent.com/26740359/182779188-29bb4319-7739-45ee-bcfc-34a6d7ebfed7.png)
+![image](https://user-images.githubusercontent.com/26740359/182779309-8bdb3c68-8898-4a45-9e46-94179c0e04f8.png)
+
+## Frist plan
+![image](https://user-images.githubusercontent.com/26740359/182779538-09d74e1a-4153-4240-89f0-5a9845418d8a.png)
+
+## Comments/Troubles
+
+I built this project on React, using Firebase to store all data related to the products. Starting from a basic structure Heading/Main/Footer, I identified each component of the site beforehand as well as some behaviour I should consider such as stock, warnings, spinner display, cart display, etc. I also used Jira to organize and visualize the steps needed and Github.
+
+
+
