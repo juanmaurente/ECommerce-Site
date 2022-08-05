@@ -8,24 +8,48 @@ import dell from '../../assets/icons/4691411_dell_icon.png';
 
 function Brands() {
 	return (
-		<div>
+		<div className={styles.brands_container}>
 			<span>
-				<img src={microsoft} alt='microsoft logo' />
+				<img
+					className={styles.brandLogo}
+					src={microsoft}
+					alt='microsoft logo'
+				/>
 			</span>
 			<span>
-				<img src={apple} alt='microsoft logo' />
+				<img
+					className={styles.brandLogo}
+					src={apple}
+					alt='microsoft logo'
+				/>
 			</span>
 			<span>
-				<img src={samsung} alt='microsoft logo' />
+				<img
+					className={styles.brandLogo}
+					src={samsung}
+					alt='microsoft logo'
+				/>
 			</span>
 			<span>
-				<img src={dell} alt='microsoft logo' />
+				<img
+					className={styles.brandLogo}
+					src={dell}
+					alt='microsoft logo'
+				/>
 			</span>
 			<span>
-				<img src={huawei} alt='microsoft logo' />
+				<img
+					className={styles.brandLogo}
+					src={huawei}
+					alt='microsoft logo'
+				/>
 			</span>
 			<span>
-				<img src={canon} alt='microsoft logo' />
+				<img
+					className={styles.brandLogo}
+					src={canon}
+					alt='microsoft logo'
+				/>
 			</span>
 		</div>
 	);
