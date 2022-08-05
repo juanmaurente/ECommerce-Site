@@ -32,12 +32,19 @@
 }
 
 .hero_button {
+	font-family: 'Exo';
+	font-weight: 800;
 	z-index: 1;
 	width: 150px;
 	margin: 20px auto;
 	padding: 15px;
-	border-radius: 7px;
+	border-radius: 2px;
 	background-color: #77b6ea;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #b0d4f1;
+	}
 }
 
 @media screen and (max-width: 850px) {

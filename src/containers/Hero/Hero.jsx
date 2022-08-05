@@ -1,5 +1,5 @@
 import styles from '../Hero/Hero.module.scss';
-import img from '../../assets/fabian-albert-iiPOd73iCUQ-unsplash.jpg';
+import img from '../../assets/background/fabian-albert-iiPOd73iCUQ-unsplash.jpg';
 
 function Hero() {
 	return (
