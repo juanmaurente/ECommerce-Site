@@ -9,7 +9,7 @@
 .navbar {
 	width: 80vw;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	position: sticky;
 
@@ -21,6 +21,16 @@
 	&_bars {
 		display: none;
 	}
+
+	&_cart {
+		padding: 20px;
+	}
+}
+
+.leftBlock {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .navbar_links {
