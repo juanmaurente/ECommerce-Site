@@ -1,0 +1,13 @@
+.container {
+	width: 100vw;
+	background-color: #37393a;
+}
+
+.ProductsGallery {
+	width: 80vw;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 40px;
+	padding-top: 85px;
+	margin: 0px auto;
+}

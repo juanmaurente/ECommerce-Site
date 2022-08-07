@@ -1,10 +1,16 @@
+.container {
+	width: 100vw;
+	background-color: #c7d3ddb0;
+	display: flex;
+	justify-content: center;
+}
+
 .brands_container {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: baseline;
-	width: 100vw;
-	background-color: #c7d3dd41;
+	width: 80vw;
 }
 
 .brandLogo {
