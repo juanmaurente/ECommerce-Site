@@ -1,7 +1,12 @@
 import styles from '../Hero/Hero.module.scss';
 import img from '../../assets/background/fabian-albert-iiPOd73iCUQ-unsplash.jpg';
+import { useNavigate } from 'react-router';
 
 function Hero() {
+	const navigate = useNavigate();
+
+	const handleClick = () => navigate('/products');
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.fullContainer}>
@@ -14,7 +19,11 @@ function Hero() {
 					<h2 className={styles.hero_title}>
 						Everything you can imagine is here
 					</h2>
-					<button className={styles.hero_button}>Shop Now</button>
+					<button
+						onClick={handleClick}
+						className={styles.hero_button}>
+						Shop Now
+					</button>
 				</div>
 			</div>
 		</div>

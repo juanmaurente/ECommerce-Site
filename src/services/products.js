@@ -3,7 +3,7 @@ import { firestore } from './firestore';
 export const getProducts = async () => {
 	const collectionRef = firestore.collection('products');
 
-	const data = await collectionRef.get();
+	const data = await collectionRef.orderBy('category', 'desc').get();
 
 	const rawDocuments = data.docs;
 

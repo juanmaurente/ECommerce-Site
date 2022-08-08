@@ -1,9 +1,9 @@
 import styles from '../Navbar/Navbar.module.scss';
 import { useEffect, useState } from 'react';
-import Link from '../../components/Link';
 import logo from '../../assets/icons/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from 'react-router-dom';
 
 function Navbar() {
 	const [displayLinks, setDisplayLinks] = useState(true);
@@ -26,29 +26,35 @@ function Navbar() {
 						alt='tech logo'
 					/>
 				</div>
-				<div className={styles.leftBlock}>
+
+				<div className={styles.rightBlock}>
 					<div
 						className={
 							displayLinks
 								? styles.navbar_links
 								: styles.navbar_links_hidden
 						}>
-						<Link title={'Link 1'} />
-						<Link title={'Link 2'} />
-						<Link title={'Link 3'} />
-						<Link title={'Link 4'} />
+						<NavLink className={styles.link} to='/'>
+							Home
+						</NavLink>
+						<NavLink className={styles.link} to='/products'>
+							Products
+						</NavLink>
+						<NavLink className={styles.link} to='/about'>
+							About
+						</NavLink>
 					</div>
+					<FontAwesomeIcon
+						className={styles.navbar_bars}
+						icon={faBars}
+						onClick={handleDisplay}
+					/>
 					<FontAwesomeIcon
 						className={styles.navbar_cart}
 						icon={faShoppingCart}
 						onClick={handleCart}
 					/>
 				</div>
-				<FontAwesomeIcon
-					className={styles.navbar_bars}
-					icon={faBars}
-					onClick={handleDisplay}
-				/>
 			</nav>
 		</div>
 	);
