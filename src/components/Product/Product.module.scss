@@ -21,10 +21,9 @@
 		color: #e8eef2;
 	}
 
-	&_title {
-	}
-
 	&_price {
+		margin: 0px;
+		margin-bottom: 5px;
 	}
 
 	&:hover {
@@ -32,5 +31,34 @@
 		background-color: #c7d3dd44;
 		transform: scale(1.05);
 		transition: 0.5s;
+	}
+}
+
+.buttons_Add {
+	font-family: 'Exo';
+	padding: 10px;
+	margin: 5px 5px 5px 0px;
+	background-color: #77b6ea;
+	border: 0px;
+	color: #e8eef2;
+
+	&:hover {
+		background-color: #b6d4ec;
+		color: #37393a;
+		font-weight: 600;
+	}
+}
+.buttons_More {
+	font-family: 'Exo';
+	padding: 10px;
+	margin: 5px 5px 5px 0px;
+	background-color: #d6c9c9;
+	border: 0px;
+	color: #37393a;
+
+	&:hover {
+		background-color: #e6e4e4;
+		color: #2b2c2c;
+		font-weight: 600;
 	}
 }

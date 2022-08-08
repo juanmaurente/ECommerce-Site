@@ -1,5 +1,5 @@
 import styles from '../Hero/Hero.module.scss';
-import img from '../../assets/background/fabian-albert-iiPOd73iCUQ-unsplash.jpg';
+import img from '../../assets/images/fabian-albert-iiPOd73iCUQ-unsplash.jpg';
 import { useNavigate } from 'react-router';
 
 function Hero() {

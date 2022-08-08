@@ -21,23 +21,25 @@ function App() {
 	}, []);
 
 	return (
-		<BrowserRouter>
-			<Navbar />
-			<Routes>
-				<Route
-					path='/'
-					element={
-						<div className={styles.App}>
-							<Hero />
-							<Brands />
-							<ProductsGrid products={products} />
-						</div>
-					}
-				/>
-				<Route path='/about' element={<About />} />
-				<Route path='/products' element={<ProductPage />} />
-			</Routes>
-		</BrowserRouter>
+		<div className={styles.App}>
+			<BrowserRouter>
+				<Navbar />
+				<Routes>
+					<Route
+						path='/'
+						element={
+							<div className={styles.App}>
+								<Hero />
+								<Brands />
+								<ProductsGrid products={products} />
+							</div>
+						}
+					/>
+					<Route path='/about' element={<About />} />
+					<Route path='/products' element={<ProductPage />} />
+				</Routes>
+			</BrowserRouter>
+		</div>
 	);
 }
 
