@@ -1,12 +1,7 @@
 import styles from '../ProductCard/ProductCard.module.scss';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function ProductCard({ id, title, thumbnail, brand, description, price }) {
-	const navigate = useNavigate();
-
-	const handleInfo = (e) => {
-		navigate('/product');
-	};
 	return (
 		<div className={styles.product}>
 			<img
@@ -19,11 +14,11 @@ function ProductCard({ id, title, thumbnail, brand, description, price }) {
 				<h5 className={styles.product_price}>${price}</h5>
 				<div className={styles.buttons}>
 					<button className={styles.buttons_Add}>Add To Cart</button>
-					<button
-						onClick={handleInfo}
+					<NavLink
+						to={`/products/${id}`}
 						className={styles.buttons_More}>
 						More Info
-					</button>
+					</NavLink>
 				</div>
 			</div>
 		</div>
