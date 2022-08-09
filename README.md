@@ -1,10 +1,7 @@
 # React e-Shop Website
 
-## Design - Inspiration
-
-![image](https://user-images.githubusercontent.com/26740359/182778972-c3801368-e889-4953-8525-b8e4f5a56e94.png)
-![image](https://user-images.githubusercontent.com/26740359/182779188-29bb4319-7739-45ee-bcfc-34a6d7ebfed7.png)
-![image](https://user-images.githubusercontent.com/26740359/182779309-8bdb3c68-8898-4a45-9e46-94179c0e04f8.png)
+## Design ![image](https://user-images.githubusercontent.com/26740359/183672771-ac5368e8-e0e5-4ff0-b62c-719faa35b99b.png)
+![image](https://user-images.githubusercontent.com/26740359/183672878-7c377f96-21a3-4a43-9ed7-52c82e2f7de2.png)
 
 ## Frist plan
 
