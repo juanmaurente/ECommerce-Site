@@ -2,7 +2,7 @@ import styles from './App.module.scss';
 import Navbar from './containers/Navbar';
 import Hero from './containers/Hero/Hero';
 import About from './containers/About/About';
-import ProductPage from './containers/ProductPage';
+import ProductPage from './containers/ProductPage/ProductPage';
 import Brands from './containers/Brands';
 import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -11,10 +11,12 @@ import ProductsGrid from './containers/ProductsGrid/ProductsGrid';
 
 function App() {
 	const [products, setProducts] = useState([]);
+	const [images, setImages] = useState([]);
 	useEffect(() => {
 		const wrapper = async () => {
 			const products = await getProducts();
 			setProducts(products);
+			setImages(products.map((product) => product.thumbnail));
 		};
 
 		wrapper();
@@ -29,7 +31,7 @@ function App() {
 						path='/'
 						element={
 							<div className={styles.App}>
-								<Hero />
+								<Hero images={images} />
 								<Brands />
 							</div>
 						}
@@ -39,6 +41,7 @@ function App() {
 						path='/products'
 						element={<ProductsGrid products={products} />}
 					/>
+					<Route path='/products/:id' element={<ProductPage />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

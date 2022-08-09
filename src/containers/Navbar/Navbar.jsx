@@ -3,10 +3,11 @@ import { useEffect, useState } from 'react';
 import logo from '../../assets/icons/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 function Navbar() {
 	const [displayLinks, setDisplayLinks] = useState(true);
+	const navigate = useNavigate;
 
 	const handleDisplay = () => {
 		setDisplayLinks(!displayLinks);
@@ -20,11 +21,13 @@ function Navbar() {
 		<div className={styles.container}>
 			<nav className={styles.navbar}>
 				<div>
-					<img
-						className={styles.navbar_logo}
-						src={logo}
-						alt='tech logo'
-					/>
+					<NavLink to='/'>
+						<img
+							className={styles.navbar_logo}
+							src={logo}
+							alt='tech logo'
+						/>
+					</NavLink>
 				</div>
 
 				<div className={styles.rightBlock}>

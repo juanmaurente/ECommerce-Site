@@ -1,7 +1,7 @@
-import styles from '../Product/Product.module.scss';
+import styles from '../ProductCard/ProductCard.module.scss';
 import { useNavigate } from 'react-router-dom';
 
-function Product({ id, title, thumbnail, brand, description, price }) {
+function ProductCard({ id, title, thumbnail, brand, description, price }) {
 	const navigate = useNavigate();
 
 	const handleInfo = (e) => {
@@ -30,4 +30,4 @@ function Product({ id, title, thumbnail, brand, description, price }) {
 	);
 }
 
-export default Product;
+export default ProductCard;

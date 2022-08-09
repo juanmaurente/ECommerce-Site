@@ -1,5 +1,5 @@
 import styles from '../ProductsGrid/ProductsGrid.module.scss';
-import Product from '../../components/Product';
+import ProductCard from '../../components/ProductCard';
 
 function ProductsGrid({ products }) {
 	return (
@@ -11,7 +11,7 @@ function ProductsGrid({ products }) {
 					})
 					.map((product) => {
 						return (
-							<Product
+							<ProductCard
 								key={product.id}
 								thumbnail={product.thumbnail}
 								title={product.title}

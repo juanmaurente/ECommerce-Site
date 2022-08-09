@@ -1,10 +1,9 @@
 .container {
 	width: 100vw;
-	height: 100vh;
+	height: calc(100vh - 85px);
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	background-image: url('../../assets/images/fabian-albert-iiPOd73iCUQ-unsplash.jpg');
 	background-size: cover;
 }
 
@@ -32,12 +31,33 @@
 	padding: 15px;
 	border-radius: 2px;
 	background-color: #77b6ea;
+	border: 0px;
 	cursor: pointer;
 
 	&:hover {
 		background-color: #b0d4f1;
 		font-weight: 600;
 	}
+}
+
+.left {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	min-width: 120px;
+	background-color: #37393a52;
+	cursor: pointer;
+}
+
+.right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	min-width: 120px;
+	background-color: #37393a52;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 850px) {
