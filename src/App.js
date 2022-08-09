@@ -31,12 +31,14 @@ function App() {
 							<div className={styles.App}>
 								<Hero />
 								<Brands />
-								<ProductsGrid products={products} />
 							</div>
 						}
 					/>
 					<Route path='/about' element={<About />} />
-					<Route path='/products' element={<ProductPage />} />
+					<Route
+						path='/products'
+						element={<ProductsGrid products={products} />}
+					/>
 				</Routes>
 			</BrowserRouter>
 		</div>

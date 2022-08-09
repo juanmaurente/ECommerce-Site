@@ -4,7 +4,9 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #c7d3dd41;
+	background-color: #37393aa8;
+	position: fixed;
+	top: 0px;
 }
 
 .navbar {
@@ -12,7 +14,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: sticky;
 
 	&_logo {
 		cursor: pointer;
