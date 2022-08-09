@@ -1,23 +1,24 @@
 import styles from '../ProductCard/ProductCard.module.scss';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-function ProductCard({ id, title, thumbnail, brand, description, price }) {
+function ProductCard(props) {
+	const { product } = props;
 	return (
 		<div className={styles.product}>
 			<img
-				src={thumbnail}
+				src={product.thumbnail}
 				className={styles.product_img}
-				alt={description}
+				alt={product.description}
 			/>
 			<div className={styles.product_info}>
-				<h5 className={styles.product_title}>{title}</h5>
-				<h5 className={styles.product_price}>${price}</h5>
+				<h5 className={styles.product_title}>{product.title}</h5>
+				<h5 className={styles.product_price}>${product.price}</h5>
 				<div className={styles.buttons}>
 					<button className={styles.buttons_Add}>Add To Cart</button>
-					<NavLink
-						to={`/products/${id}`}
-						className={styles.buttons_More}>
-						More Info
+					<NavLink to={`/products/${product.id}`}>
+						<button className={styles.buttons_More}>
+							More Info
+						</button>
 					</NavLink>
 				</div>
 			</div>

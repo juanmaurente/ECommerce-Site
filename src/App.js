@@ -10,12 +10,10 @@ import { getProducts } from './services/products';
 import ProductsGrid from './containers/ProductsGrid/ProductsGrid';
 
 function App() {
-	const [products, setProducts] = useState([]);
 	const [images, setImages] = useState([]);
 	useEffect(() => {
 		const wrapper = async () => {
 			const products = await getProducts();
-			setProducts(products);
 			setImages(products.map((product) => product.thumbnail));
 		};
 
@@ -37,10 +35,7 @@ function App() {
 						}
 					/>
 					<Route path='/about' element={<About />} />
-					<Route
-						path='/products'
-						element={<ProductsGrid products={products} />}
-					/>
+					<Route path='/products' element={<ProductsGrid />} />
 					<Route path='/products/:id' element={<ProductPage />} />
 				</Routes>
 			</BrowserRouter>

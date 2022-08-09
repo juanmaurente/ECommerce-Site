@@ -19,11 +19,22 @@ function ProductPage() {
 			{loading ? (
 				<h1>Loading</h1>
 			) : (
-				<div>
-					<h1>{product.title}</h1>
-					<h2>${product.price}</h2>
-					<img src={product.thumbnail} alt={product.title} />
-					<p>{product.description}</p>
+				<div className={styles.container}>
+					<div className={styles.leftBlock}>
+						<img
+							className={styles.image}
+							src={product.thumbnail}
+							alt={product.title}
+						/>
+					</div>
+					<div className={styles.rightBlock}>
+						<h1 className={styles.title}>{product.title}</h1>
+						<h2 className={styles.price}>${product.price}</h2>
+						<p>{product.description}</p>
+						<button className={styles.buttons_Add}>
+							Add To Cart
+						</button>
+					</div>
 				</div>
 			)}
 		</>
