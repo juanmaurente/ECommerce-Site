@@ -21,7 +21,7 @@ I built this project on React, using Firebase to store all data related to the p
 -   first time using icons library from react material-ui / fontawsome
 -   fetching data from firebase took a while
 
-Things to improve:
+### Things to improve:
 
 -   Need to add different features for each product (size, color, etc)
 -   (Bonus) Cart hasn't been implemented. My idea was to implement a new page or Cart section (hidden) and when clicked redirect or display this page/section. Also checking data, stock
