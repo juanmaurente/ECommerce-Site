@@ -1,0 +1,29 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 60vh;
+	background-color: #353440;
+	flex-direction: column;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fca4a4;
+	font-size: 20px;
+}
+.thick {
+	font-weight: 800;
+	padding-right: 3px;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.date {
+	padding-top: 25px;
+	font-weight: 300;
+}

@@ -2,6 +2,7 @@ import styles from './App.module.scss';
 import Navbar from './containers/Navbar';
 import Hero from './containers/Hero/Hero';
 import About from './containers/About/About';
+import Footer from './containers/Footer';
 import ProductPage from './containers/ProductPage/ProductPage';
 import Brands from './containers/Brands';
 import { useEffect, useState } from 'react';
@@ -38,6 +39,7 @@ function App() {
 					<Route path='/products' element={<ProductsGrid />} />
 					<Route path='/products/:id' element={<ProductPage />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	);
