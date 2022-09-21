@@ -13,7 +13,7 @@ I built this project on React.js, using Firebase to store all data related to th
 
 ###About the process
 
-Starting from a basic structure Heading/Main/Footer, I tried to identify each component of the site beforehand as well as some expected behaviour. Once I had the basic idea I designed the different pages I wanted to reach (Product gallery and Product page). Then starting from functional components I started to develop the site, considering also its responsiveness from the beginning.  
+Starting from a basic structure Heading/Main/Footer, I tried to identify each component of the site beforehand as well as some expected behaviour. Once I had the basic idea I designed the different pages I wanted to reach (Product gallery and Product page). Then starting from functional components I started to develop the site, considering also its responsiveness from the beginning...
 
 ### Some issues found:
 
