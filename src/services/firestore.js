@@ -8,12 +8,12 @@ import 'firebase/compat/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-	apiKey: 'AIzaSyAnk79tsPGcQ_GET1f0A1cadoPgBVaYaCw',
-	authDomain: 'juanmaurente-ecommerce-site.firebaseapp.com',
-	projectId: 'juanmaurente-ecommerce-site',
-	storageBucket: 'juanmaurente-ecommerce-site.appspot.com',
-	messagingSenderId: '888003201873',
-	appId: '1:888003201873:web:afb45ecfe2c4f4efbee170',
+	apiKey: process.env.REACT_APP_API_KEY,
+	authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+	projectId: process.env.REACT_APP_PROJECT_ID,
+	storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+	messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+	appId: process.env.REACT_APP_APP_ID,
 };
 
 // Initialize Firebase
