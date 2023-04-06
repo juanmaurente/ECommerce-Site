@@ -7,26 +7,31 @@
 
 ![image](https://user-images.githubusercontent.com/26740359/182779538-09d74e1a-4153-4240-89f0-5a9845418d8a.png)
 
-## Comments/Troubles
+## Intro
 
-I built this project on React, using Firebase to store all data related to the products. Starting from a basic structure Heading/Main/Footer, I tried to identify each component of the site beforehand as well as some expected behaviour. I also used Jira to organize and visualize the steps needed and Github.
+I built this project on React.js, using Firebase to store all data related to the products. I also used Jira to organize and visualize the steps needed and Github for version control.
+
+###About the process
+
+Starting from a basic structure Heading/Main/Footer, I tried to identify each component of the site beforehand as well as some expected behaviour. Once I had the basic idea I designed the different pages I wanted to reach (Product gallery and Product page). Then starting from functional components I started to develop the site, considering also its responsiveness from the beginning...
 
 ### Some issues found:
 
--   React route, did not recognize the id of each product
--   rendering image properly was more difficult than expected (quality, size, contrast, etc)
--   first time using icons library from react material-ui / fontawsome
--   fetching data from firebase took a while
+-   React route, did not recognize the id of each product.
+-   Rendering image properly was more difficult than expected (quality, size, contrast, etc). 
+-   First time using icons library from react material-ui / fontawsome
+-   Fetching data from firestore implied to go deeper in the documentation. 
 
 ### Things to improve:
-
--   Need to add different features for each product (size, color, etc)
+  
+- Need to add different features for each product (size, color, etc)
 -   (Bonus) Cart hasn't been implemented. My idea was to implement a new page or Cart section (hidden) and when clicked redirect or display this page/section. Also checking data, stock
--   not use of useContext and search bar to find products
+-   not use of useContext and search bar to find products.
 -   Carousel could change images automatically after certain amount of time
 -   Testing libraries
 -   Implement Spiners or similar while loading
 
+# About this project
 ## Outline
 
 This project is designed to reinforce your React learnings and make sure that you are comfortable with most aspect of the framework.
